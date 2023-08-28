@@ -74,8 +74,8 @@ export const Navbar = () =>{
           <div className="text-2xl font-bold">
             <span>Crowd</span>
             <span className="text-huawei-red">Flow</span>
-            <span className="font-normal text-xs pl-2">Powered by</span>
-            <span className="font-bold text-xs"> Huawei Cloud</span>
+            <span className="font-normal text-[11px] pl-2 lg:max-[1100px]:hidden">Powered by</span>
+            <span className="font-bold text-[11px] lg:max-[1100px]:hidden"> Huawei Cloud</span>
           </div>
         </div>
         <div className="flex lg:hidden">
