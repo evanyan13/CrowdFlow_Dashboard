@@ -12,7 +12,7 @@ const TotalVisitsContainer = () => {
 
   return (
     <div className="w-1/2 p-4 bg-white rounded-md m-1 drop-shadow-md flex flex-col items-center justify-evenly">
-      <span className="text-lg font-semibold">Hourly Visits</span>
+      <span className="text-lg font-semibold">Total Visits</span>
       <button
         className="absolute top-0 right-0 p-2 bg-white rounded-md drop-shadow-md hover:bg-gray-100"
         onClick={() => setOpen(true)}
