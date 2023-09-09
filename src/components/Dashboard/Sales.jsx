@@ -35,9 +35,9 @@ const items = [
 
 const Sales = () => {
   return (
-    <div className="flex flex-col justify-between w-1/3 m-1">
+    <div className="flex flex-col justify-between w-1/2 m-1">
       {items.map((item) => (
-        <div className="flex justify-between bg-white rounded-md drop-shadow-md h-[23%] pl-3 pr-3">
+        <div className="flex justify-between bg-white rounded-md drop-shadow-md h-[23%] pl-3 pr-3" key={item.title}>
           <div className="flex flex-col justify-center">
             <span className="text-gray-400 text-sm">{item.title}</span>
             <div>
