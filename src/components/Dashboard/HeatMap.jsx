@@ -1,19 +1,18 @@
-import React from "react";
+import React, { useState, useRef, useLayoutEffect } from "react";
 
-const HeatMap = () => {
+const HeatMap = ({width}) => {
+  const ref = React.useRef();
+  const [height, setHeight] = React.useState("0px");
+  const onLoad = () => {
+    setHeight(ref.current.contentWindow.document.body.scrollHeight + "px");
+  };
+
   return (
-    <div
-      className="w-2/3 p-4 bg-white rounded-md m-1 drop-shadow-md
-
-    "
-    >
-      <iframe
-        src="https://console-intl.huaweicloud.com/dlv/vision/share/?id=eed82f9d98a0473e9a2e676fd7b78e85&locale=en-us&region=ap-southeast-3"
-        title="Embedded Website"
-        width="100%"
-        height="100%"
-      />
-    </div>
+    <iframe
+      src="https://console-intl.huaweicloud.com/dlv/vision/share/?id=eed82f9d98a0473e9a2e676fd7b78e85&locale=en-us&region=ap-southeast-3"
+      width="400vw"
+      height="auto"
+    />
   );
 };
 
