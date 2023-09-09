@@ -1,7 +1,7 @@
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
-const HeatMapModal = ({ open, hideModal }) => {
+const HourlyVisitsModal = ({ open, hideModal }) => {
   const cancelButtonRef = useRef(null);
 
   return (
@@ -41,13 +41,13 @@ const HeatMapModal = ({ open, hideModal }) => {
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left h-full w-full">
                       <Dialog.Title
                         as="h1"
-                        className="text-base font-semibold leading-6 text-gray-900 text-3xl"
+                        className="font-semibold leading-6 text-gray-900 text-3xl  ml-12 mb-5"
                       >
-                        Heatmap
+                        Hourly Visits
                       </Dialog.Title>
                       <div className="mt-2 w-full h-full">
                         <iframe
-                          src="https://console-intl.huaweicloud.com/dlv/vision/share/?id=eed82f9d98a0473e9a2e676fd7b78e85&locale=en-us&region=ap-southeast-3"
+                          src="https://console-intl.huaweicloud.com/dlv/vision/share/?id=31fd87ee08614a7891e7a365b119199c&locale=en-us&region=ap-southeast-3"
                           height="100%"
                           width="800vw"
                         />
@@ -74,4 +74,4 @@ const HeatMapModal = ({ open, hideModal }) => {
   );
 };
 
-export default HeatMapModal;
+export default HourlyVisitsModal;
