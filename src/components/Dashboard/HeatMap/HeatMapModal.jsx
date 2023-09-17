@@ -41,7 +41,7 @@ const HeatMapModal = ({ open, hideModal }) => {
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left h-full w-full">
                       <Dialog.Title
                         as="h1"
-                        className="text-base font-semibold leading-6 text-gray-900 text-3xl ml-12"
+                        className="font-semibold leading-6 text-gray-900 text-3xl  ml-12 mb-5"
                       >
                         Heat Map
                       </Dialog.Title>
