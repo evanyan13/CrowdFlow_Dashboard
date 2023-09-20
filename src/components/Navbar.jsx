@@ -49,7 +49,7 @@ const products = [
   },
 ];
 const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
+  { name: "Watch demo", href: "https://www.youtube.com/watch?v=4OEs3hhj4dg", icon: PlayCircleIcon },
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
 
@@ -164,7 +164,7 @@ export const Navbar = () =>{
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+            Log out <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -245,7 +245,7 @@ export const Navbar = () =>{
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Log out
                 </a>
               </div>
             </div>
